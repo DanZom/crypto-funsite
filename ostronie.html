@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -79,34 +78,7 @@
                 <span class="footerparagraph ">&copy; 2019 DanZom</span>
             </div>
         </div>
-
-        <script>
-            //Dotyczy responsywnego menu , hamburger logo
-            var mainNav = document.getElementById("js-menu");
-            var navBarToggle = document.getElementById("js-navbar-toggle");
-
-            navBarToggle.addEventListener("click", function() {
-                mainNav.classList.toggle("active");
-            });
-
-            //Dotyczy przycisku UP
-            function scrollFunction() {
-                if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
-                    document.getElementById("topBtn").style.display = "block";
-                } else {
-                    document.getElementById("topBtn").style.display = "none";
-                }
-            }
-
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            };
-            window.onscroll = function() {
-                scrollFunction()
-            };
-        </script>
-
+        <script src="js/main.js"></script>
 </body>
 
 </html>
