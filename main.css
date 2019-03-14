@@ -1,0 +1,261 @@
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ /*Divs <div> atributes*/
+ 
+ .container {
+     display: flex;
+     flex-direction: column;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     font-size: 18px;
+     background: #F4F4F4;
+     width: 100%;
+ }
+ 
+ .navbar {
+     font-size: 20px;
+     background: linear-gradient(180deg, #3f3f3f, #2e2e2e);
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     padding-bottom: 10px;
+ }
+ 
+ .main-nav {
+     list-style-type: none;
+     display: none;
+     font-family: 'Righteous', cursive;
+     font-weight: bold;
+ }
+ 
+ .nav-links,
+ .logo {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.7);
+ }
+ 
+ .logo:hover,
+ .nav-links:hover {
+     color: rgba(255, 255, 255, 1);
+ }
+ 
+ .main-nav li {
+     text-align: center;
+     margin: 15px auto;
+ }
+ 
+ .logo {
+     display: flex;
+     margin-top: 10px;
+     margin-left: 20px;
+ }
+ 
+ .navbar-toggle {
+     position: absolute;
+     top: 10px;
+     right: 20px;
+     cursor: pointer;
+     color: #F4F4F4;
+     font-size: 24px;
+ }
+ 
+ .active {
+     display: block;
+ }
+ 
+ .article {
+     display: flex;
+     flex-wrap: wrap;
+     width: 90%;
+     margin-left: 5%;
+     margin-top: 5%;
+     margin-bottom: 0;
+     height: auto;
+     margin-bottom: 30px;
+     background: #fff;
+     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.13);
+ }
+ 
+ .art1 {
+     width: 100%;
+     padding: 30px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ .footer {
+     display: flex;
+     height: 25vh;
+     margin-top: 2%;
+     justify-content: center;
+     flex-wrap: wrap;
+     background: linear-gradient(180deg, #3f3f3f, #2e2e2e);
+     border: 1px solid rgba(0, 0, 0, 0.2);
+ }
+ 
+ #topBtn {
+     display: none;
+     position: fixed;
+     bottom: 20px;
+     right: 5px;
+     padding: 5px;
+     z-index: 99;
+     font-size: 40px;
+     font-weight: bold;
+     background-color: rgba(0, 0, 0, 0.2);
+     opacity: 0.4;
+     color: #2A626F;
+     border: none;
+     border-radius: 30%;
+     cursor: pointer;
+ }
+ 
+ #topBtn:hover {
+     color: #FF9900;
+ }
+ 
+ .social {
+     width: 100%;
+ }
+ 
+ .social ul {
+     display: flex;
+     justify-content: center;
+     list-style: none;
+ }
+ 
+ .social ul li a {
+     display: block;
+     text-decoration: none;
+     color: #2A626F;
+     text-align: center;
+     padding: 15px;
+     padding-left: 50px;
+     padding-right: 50px;
+     font-weight: bold;
+     transition: 0.3s transform linear;
+     font-size: 25px;
+ }
+ 
+ .social ul li a:hover {
+     color: #ff9900;
+     transform: scale(1.2);
+     transition: 0.3s transform linear;
+ }
+ 
+ .social ul li:last-child a:hover {
+     color: rgba(255, 255, 255, 1);
+     transform: scale(1.2);
+     transition: 0.3s transform linear;
+ }
+ 
+ .sign {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     padding-left: 40px;
+ }
+ /*Paragraphs <p> atributes and Headers <h> atributes*/
+ 
+ .articleheader {
+     font-family: 'Fredoka One', cursive;
+     color: #A4A4A4;
+ }
+ 
+ .articleparagraph1 {
+     font-family: 'Lato', sans-serif;
+     color: #3F3F3F;
+     font-weight: bold;
+ }
+ 
+ .articleparagraph2 {
+     font-family: 'Lato', sans-serif;
+     color: #3F3F3F;
+     font-weight: Bold;
+ }
+ 
+ .footerparagraph {
+     font-family: 'Righteous', cursive;
+     color: #2A626F;
+ }
+ 
+ .gold {
+     font-family: 'Audiowide', cursive;
+     font-size: 25px;
+     font-weight: bold;
+     color: #FF9900;
+     margin: 0;
+ }
+ 
+ .white {
+     font-family: 'Audiowide', cursive;
+     font-size: 25px;
+     font-weight: bold;
+     color: white;
+     margin: 0;
+ }
+ /*Image <img> atributes*/
+ 
+ .logoarticle {
+     width: 100%;
+ }
+ 
+ .bitcoinlogo {
+     max-width: 50%;
+     margin: 0;
+     padding-top: 5%;
+     position: relative;
+     top: 50%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%)
+ }
+ 
+ @media screen and (min-width: 1023px) {
+     .container {
+         font-size: 23px;
+     }
+     .navbar {
+         display: flex;
+         justify-content: space-between;
+         padding-bottom: 0;
+         height: 70px;
+         align-items: center;
+     }
+     .main-nav {
+         display: flex;
+         margin-right: 30px;
+         flex-direction: row;
+         justify-content: flex-end;
+     }
+     .main-nav li {
+         margin: 0;
+     }
+     .nav-links {
+         margin-left: 40px;
+     }
+     .logo {
+         margin-top: 0;
+     }
+     .navbar-toggle {
+         display: none;
+     }
+     .logo:hover,
+     .nav-links:hover {
+         color: rgba(255, 255, 255, 1);
+     }
+     .art1 {
+         width: 100%;
+     }
+     .article {
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .logoarticle {
+         width: 100%;
+     }
+ }

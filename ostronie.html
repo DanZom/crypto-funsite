@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>cocrypto.pl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--ScrollUp Button-->
+        <button onclick="topFunction()" id="topBtn" title="ScrollUp Button"><i class="fas fa-arrow-circle-up"></i></button>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <a href="#" class="logo">
+                <p class="white">c</p>
+                <p class="gold">0</p>
+                <p class="white">t</p>
+                <p class="gold">0</p>
+                <p class="white">crypt</p>
+                <p class="gold">0</p>
+                <p class="white">.pl</p>
+            </a>
+            <ul class="main-nav" id="js-menu">
+
+                <li>
+                    <a href="index.html" class="nav-links">BITCOIN</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">KRYPTOWALUTY</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">BLOCKCHAIN</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">UŻYTECZNOŚĆ</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">O STRONIE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="article">
+
+            <div class="art1">
+
+                <h1 class="articleheader">C0t0crypt0.pl ? Projekt WWWW <i class="fas fa-code"></i></h1>
+                <p class="articleparagraph1">
+                    Powstał w wyniku zainteresowania tematyką Kryptowalut, Blockchain'a oraz tematyką Framework'ów Frontendowych. Główne elementy strony to artykuły, napisane w takich językach jak HTML, CSS oraz Javascript.
+                </p>
+                <h1 class="articleheader">Opis, prywatne zdanie a porada inwestycyjna <i class="fab fa-angellist"></i></h1>
+                <p class="articleparagraph1">
+                    Niniejsza strona internetowa ma charakter informacyjny. Nie jest to porada inwestycyjna.
+                </p>
+            </div>
+
+        </div>
+        <div class="footer ">
+            <div class="social">
+                <ul>
+                    <li><a href=""><i class="fab fa-btc"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="sign">
+                <span class="footerparagraph ">&copy; 2019 DanZom</span>
+            </div>
+        </div>
+
+        <script>
+            //Dotyczy responsywnego menu , hamburger logo
+            var mainNav = document.getElementById("js-menu");
+            var navBarToggle = document.getElementById("js-navbar-toggle");
+
+            navBarToggle.addEventListener("click", function() {
+                mainNav.classList.toggle("active");
+            });
+
+            //Dotyczy przycisku UP
+            function scrollFunction() {
+                if (document.body.scrollTop > 65 || document.documentElement.scrollTop > 65) {
+                    document.getElementById("topBtn").style.display = "block";
+                } else {
+                    document.getElementById("topBtn").style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            };
+            window.onscroll = function() {
+                scrollFunction()
+            };
+        </script>
+
+</body>
+
+</html>
